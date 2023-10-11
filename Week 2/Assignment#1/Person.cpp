@@ -26,7 +26,7 @@ public:
         this->Age = Age;
         this->Occupation = Occupation;
     }
-    //parameterisex constructor with selected parameters
+    //parameterised constructor with selected parameters
     Person(string Name, string Gender, int Age)
     {
         CNIC = "-------------";

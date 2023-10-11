@@ -1,5 +1,3 @@
-// understanding copy constructor
-
 #include <iostream>
 using namespace std;
 
@@ -19,7 +17,7 @@ public:
         Grade = grade;
     }
 
-    void update(const Student &data, string gender, string address)
+    Student(const Student &data, string gender, string address)
     {
         Name = data.Name;
         Age = data.Age;
@@ -41,6 +39,6 @@ public:
 int main()
 {
     Student std = Student("Fahid", 23, 'A');
-    std.update(std, "male", "Lahore");
-    std.display();
+    Student stdcopy = Student(std, "male", "Lahore");
+    stdcopy.display();
 }
