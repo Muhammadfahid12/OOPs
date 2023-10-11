@@ -8,7 +8,6 @@ class Person
 private:
     string name;
     int age;
-
 public:
     Person(string name, int age)
     {
@@ -26,24 +25,19 @@ public:
     {
         this->name = name;
     }
-
-    void getName()
-    {
+    void getName(){
         cout << name << endl;
     }
-
-    void getAge()
-    {
+    void getAge(){
         cout << age << endl;
     }
 };
-
 int main()
 {
-    Person data("Fahid", 22);
+    Person fgf("Fahid", 22);
 
-    Person Person2(data);
-    Person2.setName("Zawar");
-    Person2.getName();
-    Person2.getAge();
+    Person asd(fgf);
+    asd.setName("Zawar");
+    asd.getName();
+    // asd.getAge();
 }
