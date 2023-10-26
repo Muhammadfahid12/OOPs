@@ -4,7 +4,7 @@
 
 using namespace std;
 
-//Funciton Overwriting ---> Parent and Child class have the fucnitons with same return type, signature/name, number of parameters, 
+//Funciton Overwriting ---> Parent and Child class have the functions with same return type, signature/name, number of parameters, 
 // and their data type.
 
 class Base 

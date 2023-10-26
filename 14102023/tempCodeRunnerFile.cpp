@@ -1,0 +1,2 @@
+Child* C; 
+	// C->info();
