@@ -10,34 +10,33 @@
 
 using namespace std;
 
+class Animal
+{
 
-class Animal {
-
-	public:
-		
-		virtual void sound() = 0;
-		
+public:
+	virtual void sound() = 0;
 };
-
 
 class Dog : public Animal
 
 {
-	public:
+public:
 	Dog()
 	{
-		cout << "Child Class";
-	}	
-
+		cout << "Child Class" << endl;
+	}
+	void sound()
+	{
+		cout << "DOG";
+	}
 };
-
 
 int main()
 
 {
 	Dog xyz;
-	
+	xyz.sound();
+
 	getch();
 	return 0;
-	
 }
