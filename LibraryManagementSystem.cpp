@@ -10,6 +10,8 @@ class Libraryitem
 protected:
     int itemID;
     bool isCheckedOut;
+    bool sampleBool;
+
 
 public:
     Libraryitem()
