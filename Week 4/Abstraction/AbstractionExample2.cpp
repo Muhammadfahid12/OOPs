@@ -43,12 +43,13 @@ int main()
     Car audi;
     audi.setEngine(22);
     // cout <<audi.getEngine();
-    audi.setTransmission("EBC");
-    cout << audi.getTransmission();
+    // audi.setTransmission("EBC");
+    // cout << audi.getTransmission();
 
     Vehicle *alpha;
     alpha = &audi;
     alpha->start();
+   cout << alpha->getEngine();
 
     return 0;
 }

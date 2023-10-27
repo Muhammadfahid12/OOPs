@@ -74,7 +74,8 @@ int main()
 	abc.start();
 	
 	Vehicle *obj = new Car();
-	obj -> start(); 	
+	obj -> start(); 
+
 	
 	getch();
 	return 0;
