@@ -12,27 +12,27 @@ class Person
     int age;
 
 public:
-
-    void setName()
+    virtual void setName()
     {
-        cout << "I am SetName Function from parent class"<<endl;
+        cout << "I am SetName Function from parent class" << endl;
     }
 };
-class Child:public Person
+class Child : public Person
 {
 
 public:
-        string setName()
-        {
-            cout <<"I am setName Function from Child Class"<<endl;
-            return "A";
-        }
-
+    void setName()
+    {
+        cout << "I am setName Function from Child Class" << endl;
+    }
 };
 
 int main()
 {
+    Person *ptr;
+
     Child fahid;
-    fahid.setName();
-    fahid.Person::setName();
+    ptr = &fahid;
+    ptr->setName();
+    // fahid.Person::setName();
 }

@@ -33,8 +33,8 @@ int main()
 //	b.info(); // this will not work since the object is a pointer.
 //	b->info(); // this will work since we are using this pointer. We can call the fucntion with this pointer as well.
 	
-//	Base* b = new Base(); // this works in VS Studio. When we use new key word, a memory is allocated in heap.
-//	b->info(); 
+	Base* b = new Base(); // this works in VS Studio. When we use new key word, a memory is allocated in heap.
+	b->info(); 
 	
 //	Child c;
 //	b=&c;
