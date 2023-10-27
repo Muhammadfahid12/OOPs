@@ -46,5 +46,9 @@ int main()
     audi.setTransmission("EBC");
     cout << audi.getTransmission();
 
+    Vehicle *alpha;
+    alpha = &audi;
+    alpha->start();
+
     return 0;
 }
