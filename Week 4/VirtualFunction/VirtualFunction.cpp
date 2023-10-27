@@ -20,13 +20,13 @@ public:
 
 int main()
 {
-    Child obj1;
-    Parent obj2;
+    Child obj2;
+    Parent obj1;
 
     Parent *ptr;
-    ptr = &obj1;
-    ptr->show();
-
     ptr = &obj2;
     ptr->show();
+
+    // ptr = &obj1;
+    // ptr->show();
 }
